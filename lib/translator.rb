@@ -12,8 +12,7 @@ def load_library (emoticons)
 
 
   def get_japanese_emoticon(file_path, emoticon)
-    # code goes here	  emoticon_h = load_library(file_path)
-
+  library = load_library(file_path)
     if emoticon_h[:get_emoticon][emoticon]
       emoticon_h[:get_emoticon][emoticon]
     else
@@ -23,7 +22,7 @@ def load_library (emoticons)
 
 
   def get_english_meaning(file_path, emoticon)
-emoticon_h = load_library(file_path)
+library = load_library(file_path)
     if emoticon_h[:get_meaning][emoticon]
       emoticon_h[:get_meaning][emoticon]
     else
